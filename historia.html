@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História | Terra de S. Cruz</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" id="favicon" href="img/favicon-padrao.png" type="image/png">
+</head>
+<body>
+    <script>
+        const favicon = document.getElementById('favicon');
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        const setFavicon = () => {
+            favicon.href = isDark.matches ? 'img/favicon-escuro.png' : 'img/favicon-claro.png';
+        };
+        
+        setFavicon();
+        isDark.addEventListener('change', setFavicon);
+    </script>
+
+<header>
+    <h1>Terra de S. Cruz</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="jornal.html">Jornal</a>
+    <a href="historia.html">História</a>
+    <a href="contato.html">Contato</a>
+</nav>
+
+<div class="conteudo">
+    <h2 id="titulo-principal">História de Terra de S. Cruz</h2>
+    <p>Terra de S. Cruz é um portal de notícias católico brasileiro fundado em 2020. O portal tem como missão fornecer informações precisas e atualizadas sobre eventos locais, nacionais e internacionais, com um enfoque especial na perspectiva católica.</p>
+    <p>Desde sua criação, Terra de S. Cruz tem se destacado por sua cobertura abrangente e imparcial, conquistando a confiança de seus leitores. O portal conta com uma equipe de jornalistas experientes que trabalham incansavelmente para trazer as últimas notícias e análises aprofundadas sobre os acontecimentos mais relevantes do momento, sempre com um olhar atento às questões que interessam à comunidade católica.</p>
+    <p>Além das notícias, Terra de S. Cruz também oferece uma variedade de conteúdos, incluindo artigos de opinião, entrevistas exclusivas e reportagens especiais. O portal está comprometido em ser uma fonte confiável de informação para a comunidade católica, promovendo o diálogo e a compreensão entre seus leitores.</p>   
+</div>
+
+<br>
+
+<div class="final">
+    <p>© 2026 Terra de S. Cruz</p>
+</div>
+</body>
+</html>

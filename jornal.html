@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal | Terra de S. Cruz</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" id="favicon" href="img/favicon-padrao.png" type="image/png">
+</head>
+<body>
+    <script>
+        const favicon = document.getElementById('favicon');
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        const setFavicon = () => {
+            favicon.href = isDark.matches ? 'img/favicon-escuro.png' : 'img/favicon-claro.png';
+        };
+        
+        setFavicon();
+        isDark.addEventListener('change', setFavicon);
+    </script>
+
+<header>
+    <h1>Terra de S. Cruz</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="jornal.html">Jornal</a>
+    <a href="historia.html">História</a>
+    <a href="contato.html">Contato</a>
+</nav>
+
+<div class="conteudo">
+    <h2 id="titulo-principal">Jornal de Terra de S. Cruz</h2>
+    <p>Bem-vindo ao jornal de Terra de S. Cruz, onde você encontrará as últimas notícias e análises sobre os acontecimentos mais relevantes do momento. Nosso jornal é dedicado a fornecer informações precisas e imparciais para manter nossos leitores informados sobre os eventos locais, nacionais e internacionais.</p>
+    
+    <div class="grade-noticias">
+        
+        <div class="noticia">
+            <h2>Novo documentário: <i>Leo from Chicago</i></h2>
+            <p>Saiba onde assistir ao novo documentário sobre o Papa Leão XIV [...]</p>
+            <img src="img/papa.jpg" alt="Papa Leão XIV">
+        </div>
+
+        <div class="noticia">
+            <h2>Pe. Roger: Novo presidente da Canção Nova</h2>
+            <p>Pe. Roger Luís da Silva foi eleito como novo presidente da Comunidade Canção Nova, assumindo o cargo após um período de transição [...]</p>
+            <img src="img/peroger.png" alt="Padre Roger Luís">
+            <p>Padre Roger Luís / Foto: Comunicação Institucional Canção Nova</p>
+        </div>
+
+        <div class="noticia">
+            <h2>Político americano visitará Papa Leão XIV</h2>
+            <p>Marco Rubio fará uma visita ao Papa, no Vaticano, após dilemas entre o sumo pontífice e Trump [...]</p>
+            <img src="img/rubio.jpeg" alt="Papa Leão XIV e Marco Rubio">
+            <p>Prefeito Eduardo Pimentel com a primeira-dama Paula Mocellin, na audiência com o Papa Leão XIV. Vaticano, 21/01/2026. Foto: Simone Risoluti/Vatican</p>
+
+        </div>
+
+    </div> </div>
+
+<br>
+
+<div class="final">
+    <p>© 2026 Terra de S. Cruz</p>
+</div>
+</body>
+</html>

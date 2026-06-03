@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Terra de S. Cruz</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" id="favicon" href="img/favicon-padrao.png" type="image/png">
+</head>
+<body>
+    <script>
+        const favicon = document.getElementById('favicon');
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        const setFavicon = () => {
+            favicon.href = isDark.matches ? 'img/favicon-escuro.png' : 'img/favicon-claro.png';
+        };
+        
+        setFavicon();
+        isDark.addEventListener('change', setFavicon);
+    </script>
+
+<header>
+    <h1>Terra de S. Cruz</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="jornal.html">Jornal</a>
+    <a href="historia.html">História</a>
+    <a href="contato.html">Contato</a>
+</nav>
+
+<div class="conteudo">
+    <h2 id="titulo-principal">Contato</h2>
+    <p>Se você tiver alguma dúvida, sugestão ou quiser entrar em contato conosco, por favor, entre em contato:
+    </p>
+    <ul>
+        <li>Email: terradescruz@gmail.com</li>
+        <li>Telefone: (35) 9 1234-5678</li>
+    </ul>
+    <p>Estamos sempre abertos a ouvir nossos leitores e responder às suas perguntas!</p>
+</div>
+
+<br>
+
+<div class="final">
+    <p>© 2026 Terra de S. Cruz</p>
+</div>
+</body>
+</html>
